@@ -9,3 +9,9 @@ test_that("with unsupported class errors gracefully", {
     use_dictionary(1)
   })
 })
+
+test_that("is sensitive to `name`", {
+  data <- data.frame(x = 1)
+  out <- use_dictionary(data, name = "nm")
+  expect_equal(out$dataset, "nm")
+})

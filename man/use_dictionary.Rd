@@ -4,10 +4,12 @@
 \alias{use_dictionary}
 \title{Draft a data dictionary}
 \usage{
-use_dictionary(data)
+use_dictionary(data, name = NULL)
 }
 \arguments{
 \item{data}{A data frame.}
+
+\item{name}{Character. The dataset name.}
 }
 \value{
 A \link[tibble:tibble]{tibble::tibble}.

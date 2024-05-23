@@ -7,7 +7,7 @@ Authors@R:
 Description: The goal of rsetools is to make research software engineering
     easier.
 License: MIT + file LICENSE
-URL: https://github.com/maurolepore/rsetools
+URL: https://github.com/maurolepore/rsetools, https://maurolepore.github.io/rsetools/
 BugReports: https://github.com/maurolepore/rsetools/issues
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)

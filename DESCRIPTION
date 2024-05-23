@@ -1,13 +1,17 @@
 Package: rsetools
-Title: Research Software Engineering Tools
+Title: Easier Research Software Engineering
 Version: 0.0.0.9000
 Authors@R: 
     person("Mauro", "Lepore", , "maurolepore@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "https://orcid.org/0000-0002-1986-7988"))
-Description: Research software engineering tools.
+Description: The goal of rsetools is to make research software engineering
+    easier.
 License: MIT + file LICENSE
+URL: https://github.com/maurolepore/rsetools
+BugReports: https://github.com/maurolepore/rsetools/issues
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.1
-URL: https://github.com/maurolepore/rsetools
-BugReports: https://github.com/maurolepore/rsetools/issues
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3

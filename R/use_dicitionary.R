@@ -8,15 +8,18 @@
 #' @examples
 #' use_dictionary(mtcars)
 use_dictionary <- function(data) {
-  UseMethod("use_dictionary")
-}
+  check_use_dictionary(data)
 
-#' @export
-use_dictionary.data.frame <- function(data) {
   tibble::tibble(
-    data = deparse(substitute(data)),
+    dataset = deparse(substitute(data)),
     name = names(data),
     typeof = unlist(lapply(data, typeof)),
     definition = NA_character_
   )
+}
+
+check_use_dictionary <- function(data) {
+  if (!inherits(data, "data.frame")) {
+    cli::cli_abort("`data` must be a data frame, but it's a {class(data)}.")
+  }
 }

@@ -15,6 +15,20 @@
     Code
       use_dictionary(1)
     Condition
-      Error in `check_use_dictionary()`:
-      ! `data` must be a data frame, but it's a numeric.
+      Error in `UseMethod()`:
+      ! no applicable method for 'use_dictionary' applied to an object of class "c('double', 'numeric')"
+
+# with a list, warns `name` is unused
+
+    Code
+      use_dictionary(data, name = "nm")
+    Condition
+      Warning:
+      When `data` is a list `name` is ignored.
+    Output
+      # A tibble: 2 x 4
+        dataset name  typeof definition
+        <chr>   <chr> <chr>  <chr>     
+      1 a       x     double <NA>      
+      2 b       y     double <NA>      
 

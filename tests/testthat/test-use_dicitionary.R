@@ -1,6 +1,6 @@
 test_that("has the expected structure", {
-  data <- data.frame(x = 1)
-  out <- use_dictionary(data)
+  dataset <- data.frame(x = 1)
+  out <- use_dictionary(dataset)
   expect_snapshot(str(out))
 })
 

@@ -10,12 +10,12 @@
 use_dictionary <- function(data) {
   check_use_dictionary(data)
 
-  tibble::tibble(
-    dataset = deparse(substitute(data)),
-    name = names(data),
-    typeof = unlist(lapply(data, typeof)),
-    definition = NA_character_
-  )
+  dataset <- deparse(substitute(data))
+  name <- names(data)
+  typeof <- unlist(lapply(data, typeof))
+  definition <- NA_character_
+
+  tibble::tibble(dataset, name, typeof, definition)
 }
 
 check_use_dictionary <- function(data) {

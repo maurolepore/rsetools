@@ -27,6 +27,6 @@ use_dictionary(mtcars)
 
 use_dictionary(mtcars, name = "Motor Trend Car Road Tests")
 
-data <- list(mtcars  = mtcars, iris = iris)
+data <- list(mtcars = mtcars, iris = iris)
 use_dictionary(data)
 }

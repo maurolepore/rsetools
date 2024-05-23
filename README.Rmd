@@ -33,4 +33,6 @@ devtools::install_github("maurolepore/rsetools")
 
 ```{r example}
 library(rsetools)
+
+use_dictionary(mtcars)
 ```

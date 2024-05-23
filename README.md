@@ -20,9 +20,22 @@ devtools::install_github("maurolepore/rsetools")
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
-
 ``` r
 library(rsetools)
-## basic example code
+
+use_dictionary(mtcars)
+#> # A tibble: 11 × 4
+#>    dataset column typeof definition
+#>    <chr>   <chr>  <chr>  <chr>     
+#>  1 data    mpg    double <NA>      
+#>  2 data    cyl    double <NA>      
+#>  3 data    disp   double <NA>      
+#>  4 data    hp     double <NA>      
+#>  5 data    drat   double <NA>      
+#>  6 data    wt     double <NA>      
+#>  7 data    qsec   double <NA>      
+#>  8 data    vs     double <NA>      
+#>  9 data    am     double <NA>      
+#> 10 data    gear   double <NA>      
+#> 11 data    carb   double <NA>
 ```

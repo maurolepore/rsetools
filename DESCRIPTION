@@ -1,6 +1,6 @@
 Package: rsetools
 Title: Easier Research Software Engineering
-Version: 0.0.0.9004
+Version: 0.0.0.9005
 Authors@R: 
     person("Mauro", "Lepore", , "maurolepore@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "https://orcid.org/0000-0002-1986-7988"))
@@ -13,6 +13,7 @@ BugReports: https://github.com/maurolepore/rsetools/issues
 Imports: 
     rlang,
     tibble,
+    usethis,
     utils
 Suggests: 
     testthat (>= 3.0.0)

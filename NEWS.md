@@ -4,7 +4,8 @@
 
 BREAKING CHANGES
 
-* `use_dictionary()` now outputs the column `type`  (#8). Before this column was named `typeof`.
+* `use_dictionary()` now outputs the column `type`  (#8). Before this column was
+named `typeof`.
 
 # rsetools 0.0.0.9006 (2024-05-24)
 

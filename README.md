@@ -27,7 +27,7 @@ library(rsetools)
 
 use_dictionary(mtcars)
 #> # A tibble: 11 × 4
-#>    dataset name  typeof definition
+#>    dataset name  type   definition
 #>    <chr>   <chr> <chr>  <chr>     
 #>  1 mtcars  mpg   double <NA>      
 #>  2 mtcars  cyl   double <NA>      

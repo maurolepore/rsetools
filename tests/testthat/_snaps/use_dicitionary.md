@@ -6,7 +6,7 @@
       tibble [1 x 4] (S3: tbl_df/tbl/data.frame)
        $ dataset   : chr "dataset"
        $ name      : chr "x"
-       $ typeof    : Named chr "double"
+       $ type      : Named chr "double"
         ..- attr(*, "names")= chr "x"
        $ definition: chr NA
 

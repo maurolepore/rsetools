@@ -1,5 +1,9 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# rsetools 0.0.0.9005 (2024-05-24)
+
+* New `use_pr_checklist()` helps create a pull-request checklist (#6).
+
 # rsetools 0.0.0.9004 (2024-05-24)
 
 * New `match_packages()` (#2).

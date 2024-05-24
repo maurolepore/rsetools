@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: [main, master]
 
-name: R-CMD-check reverse dependencies
+name: R-CMD-check reverse dependency
 
 permissions: read-all
 

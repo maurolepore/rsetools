@@ -12,7 +12,8 @@ URL: https://github.com/maurolepore/rsetools,
 BugReports: https://github.com/maurolepore/rsetools/issues
 Imports: 
     rlang,
-    tibble
+    tibble,
+    utils
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3

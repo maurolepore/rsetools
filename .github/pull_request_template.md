@@ -15,6 +15,10 @@ TODO
 - [ ] Change the PR status from draft to ready.
 - [ ] Polish the PR description to reflect it's goal (why not how).
 - [ ] Polish the PR title as you'd like others to read it from the git log.
-- [ ] Increment the version number if necessary.
-- [ ] Update the changelog if necessary.
 - [ ] Assign a reviewer.
+
+Also if the PR includes user-facing changes:
+
+- [ ] Increment the version number: `fledge::update_version()`
+- [ ] Update the changelog: `fledge::update_news()`
+- [ ] Merge then tag: `fledge::tag_version()`

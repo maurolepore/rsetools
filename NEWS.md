@@ -1,5 +1,9 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# rsetools 0.0.0.9003 (2024-05-24)
+
+* The generic use_dictionary() gains `...` to support extensions.
+
 # rsetools 0.0.0.9002 (2024-05-23)
 
 NEW FEATURES

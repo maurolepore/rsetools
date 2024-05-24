@@ -2,6 +2,7 @@
 
 S3method(use_dictionary,data.frame)
 S3method(use_dictionary,list)
+export(match_packages)
 export(use_dictionary)
 importFrom(rlang,"%||%")
 importFrom(tibble,tibble)

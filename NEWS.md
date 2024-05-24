@@ -2,7 +2,7 @@
 
 # rsetools 0.0.0.9006 (2024-05-24)
 
-* Update PR checklist
+* Update PR checklist (#7).
 
 # rsetools 0.0.0.9005 (2024-05-24)
 

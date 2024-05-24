@@ -34,8 +34,8 @@ use_dictionary.list <- function(data, ...) {
 use_dictionary.data.frame <- function(data, ..., name = NULL) {
   dataset <- name %||% deparse(substitute(data))
   name <- names(data)
-  typeof <- unlist(lapply(data, typeof))
+  type <- unlist(lapply(data, typeof))
   definition <- NA_character_
 
-  tibble::tibble(dataset, name, typeof, definition)
+  tibble::tibble(dataset, name, type, definition)
 }

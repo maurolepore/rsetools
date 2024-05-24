@@ -1,12 +1,8 @@
 #' Create a dictionary
 #'
-#' This is a generic function with support for common objects. You may implement
-#' other methods.
-#'
 #' @param data A data frame or list of data frames.
-#' @param name Depends on the class of `data`:
-#' * `data.frame`: Character giving an alternative name for the dataset.
-#' * `list`: Unused.
+#' @param ... Unused but necessary to support for extensions.
+#' @param name Character giving an alternative name for the dataset.
 #'
 #' @return A [tibble::tibble].
 #' @export
@@ -18,16 +14,13 @@
 #'
 #' data <- list(mtcars = mtcars, iris = iris)
 #' use_dictionary(data)
-use_dictionary <- function(data, name = NULL) {
+use_dictionary <- function(data, ...) {
   UseMethod("use_dictionary")
 }
 
 #' @export
-use_dictionary.list <- function(data, name = NULL) {
-  if (!is.null(name)) {
-    rlang::warn("When `data` is a list `name` is ignored.")
-  }
-
+#' @rdname use_dictionary
+use_dictionary.list <- function(data, ...) {
   out <- as.list(vector(length = length(data)))
   for (i in seq_along(out)) {
     out[[i]] <- use_dictionary(data[[i]], name = names(data[i]))
@@ -37,7 +30,8 @@ use_dictionary.list <- function(data, name = NULL) {
 }
 
 #' @export
-use_dictionary.data.frame <- function(data, name = NULL) {
+#' @rdname use_dictionary
+use_dictionary.data.frame <- function(data, ..., name = NULL) {
   dataset <- name %||% deparse(substitute(data))
   name <- names(data)
   typeof <- unlist(lapply(data, typeof))

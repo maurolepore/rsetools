@@ -2,25 +2,28 @@
 % Please edit documentation in R/use_dicitionary.R
 \name{use_dictionary}
 \alias{use_dictionary}
+\alias{use_dictionary.list}
+\alias{use_dictionary.data.frame}
 \title{Create a dictionary}
 \usage{
-use_dictionary(data, name = NULL)
+use_dictionary(data, ...)
+
+\method{use_dictionary}{list}(data, ...)
+
+\method{use_dictionary}{data.frame}(data, ..., name = NULL)
 }
 \arguments{
 \item{data}{A data frame or list of data frames.}
 
-\item{name}{Depends on the class of \code{data}:
-\itemize{
-\item \code{data.frame}: Character giving an alternative name for the dataset.
-\item \code{list}: Unused.
-}}
+\item{...}{Unused but necessary to support for extensions.}
+
+\item{name}{Character giving an alternative name for the dataset.}
 }
 \value{
 A \link[tibble:tibble]{tibble::tibble}.
 }
 \description{
-This is a generic function with support for common objects. You may implement
-other methods.
+Create a dictionary
 }
 \examples{
 use_dictionary(mtcars)

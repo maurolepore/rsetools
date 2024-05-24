@@ -1,5 +1,11 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# rsetools 0.0.0.9007 (2024-05-24)
+
+BREAKING CHANGES
+
+* `use_dictionary()` now outputs the column `type`  (#8). Before this column was named `typeof`.
+
 # rsetools 0.0.0.9006 (2024-05-24)
 
 * Update PR checklist (#7).
